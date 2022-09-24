@@ -1,3 +1,50 @@
-.btn {
+html {
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 220px;
+    gap: 122px;
 
+    position: absolute;
+    width: 1599px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    color:#FFFFFF;
+    background: #000000;
+    backdrop-filter: blur(2px);
+}
+.petstory-logo {
+    box-sizing: border-box;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+    text-align: center;
+
+    color: #FFFFFF;
+
+border: 1.18841px solid #FFFFFF;
+}
+.container div:hover{
+    color: orange;
+
+}
+
+.container-nav{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+.section1-ft{
+    position: absolute;
+    height: 780px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
 }

@@ -57,6 +57,7 @@ html {
 }
 /**/
 .section2-ft {
+    box-sizing: border-box;
     position: absolute;
     height: 403px;
     left: 219px;
@@ -65,10 +66,11 @@ html {
     display: flex;
     align-items: space-between;
     color: #333B41;
-    background: #ffffff;
+    background: gray;
     padding: 1em;
     border-radius: 3px;
-    max-width: 24em;
+    max-height: 403;
+
     margin:auto;
 }
 
@@ -78,9 +80,16 @@ html {
 }
 .section2-ft-body {
     flex: 1;
+    order: 1;
 }
 .section2-ft-heading {
     margin: 0 0 20px;
+}
+.section2-ft-heading h4{
+    font-size: 24px;
+}
+.section2-ft-heading h1{
+    font-size: 48px;
 }
 /**/
 .section3-ft {

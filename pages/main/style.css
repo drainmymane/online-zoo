@@ -1,5 +1,6 @@
 html {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 .container{
     display: flex;
@@ -16,6 +17,10 @@ html {
     color:#FFFFFF;
     background: #000000;
     backdrop-filter: blur(2px);
+    z-index: 10;
+}
+.container div{
+    margin: auto;
 }
 .petstory-logo {
     box-sizing: border-box;
@@ -29,7 +34,7 @@ html {
 
     color: #FFFFFF;
 
-border: 1.18841px solid #FFFFFF;
+    border: 1.18841px solid #FFFFFF;
 }
 .container div:hover{
     color: orange;
@@ -47,4 +52,38 @@ border: 1.18841px solid #FFFFFF;
     left: 0px;
     right: 0px;
     top: 0px;
+    background-image: url(https://cdn.discordapp.com/attachments/1000527793190359150/1023335234986590299/GiantPanda.png);
+    background-size: cover;
+}
+/**/
+.section2-ft {
+    position: absolute;
+    height: 403px;
+    left: 219px;
+    right: 220px;
+    top: 920px;
+    display: flex;
+    align-items: space-between;
+    color: #333B41;
+    background: #ffffff;
+    padding: 1em;
+    border-radius: 3px;
+    max-width: 24em;
+    margin:auto;
+}
+
+.section2-ft-object {
+    flex: 1;
+    order: -1;
+}
+.section2-ft-body {
+    flex: 1;
+}
+.section2-ft-heading {
+    margin: 0 0 20px;
+}
+/**/
+.section3-ft {
+    
+    margin:auto;
 }

@@ -57,26 +57,21 @@ html {
 }
 /**/
 .section2-ft {
-    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
     position: absolute;
     height: 403px;
     left: 219px;
     right: 220px;
     top: 920px;
-    display: flex;
-    align-items: space-between;
-    color: #333B41;
-    background: gray;
-    padding: 1em;
-    border-radius: 3px;
-    max-height: 403;
+    background-color: antiquewhite;
 
     margin:auto;
 }
 
 .section2-ft-object {
-    flex: 1;
-    order: -1;
+    
 }
 .section2-ft-body {
     flex: 1;
@@ -96,3 +91,15 @@ html {
     
     margin:auto;
 }
+/*footer{
+    position: absolute;
+    height: 443px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    color:#FFFFFF;
+    background: #111115;
+    backdrop-filter: blur(2px);
+    z-index: 100;
+}*/

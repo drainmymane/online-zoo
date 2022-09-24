@@ -10,7 +10,7 @@ html {
     gap: 122px;
 
     position: absolute;
-    width: 1599px;
+    width: 1600px;
     height: 80px;
     left: 0px;
     top: 0px;
@@ -104,6 +104,28 @@ html {
     background: #FFFFFF;
     border: 2px solid orange;
     border-radius: 3px;
+}
+/**/
+.arrow_btn{
+    position: absolute;
+    padding: 32px 32px;
+    top: 1906px;
+    border-radius: 50px;
+    color: aliceblue;
+    z-index: 50;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+.btn1{
+    position: absolute;
+    padding: 16px 20px;
+    left: calc(50% - 298px/2);
+    top: 2455px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    background: #FE9013;
+    border-radius: 25px;
 }
 /*footer{
     position: absolute;

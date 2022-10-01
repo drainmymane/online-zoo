@@ -59,47 +59,29 @@ html {
 /**/
 .section2-ft {
     box-sizing: border-box;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 87px;
     justify-content: space-between;
     align-items: stretch;
     position: absolute;
-    height: 403px;
     top: 920px;
     left: calc(50% - 1161px/2 - 1px);
     max-width: 1161px;
-    background-color: antiquewhite;
+    color: #333B41;
 }
 .section2-ft div{
-    margin:auto;
-}
-
-.section2-ft-object {
-    
-}
-.section2-ft-body {
-    flex: 1;
-    order: 1;
-}
-.section2-ft-heading {
-    margin: 0 0 20px;
-}
-.section2-ft-heading h4{
-    font-size: 24px;
-}
-.section2-ft-heading h1{
-    font-size: 48px;
+    word-wrap: break-word;
 }
 /**/
 .section3-ft {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
 
-    box-sizing: border-box;
     position: absolute;
-    width: 1158px;
-    left: calc(50% - 1158px/2 - 1px);
+    left: calc(50% - 1170px/2 - 1px);
     height: 872px;
     top: 1503px;
     background: #FFFFFF;
@@ -108,6 +90,21 @@ html {
     border: 2px solid orange;
     border-radius: 3px;
 }
+.section3-ft span{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-left: 10px;
+}
+.pets_img{
+    transition: 1s;
+}
+.pets_img:hover{
+    transform: scale(1.05);
+}
+
+
+
 /**/
 .arrow_btn{
     position: absolute;
@@ -177,24 +174,18 @@ html {
     height: auto;
 }
 .box3{
-    background-color: #FFFFFF;
-    background-size: cover;
-    padding: 54px 30px;
-}
-.box4{
-    background-color: #FFFFFF;
-    background-size: cover;
-    width: 168px;
+    flex-wrap: nowrap;
     height: 168px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display:inline-block;
+    align-content: stretch;
+    vertical-align: middle;
 }
-.box5{
+.box3 img{
     background-color: #FFFFFF;
-    background-size: cover;
-    width: 168px;
-    height: 168px;
-}
-.box5 img{
-    margin:auto;
+    height: 100%;
+    align-self: center;
 }
 .grid2 div{
     margin: auto;
@@ -245,7 +236,7 @@ html {
     background: url(https://cdn.discordapp.com/attachments/957401806063947827/1023530180146384967/strelitzia_1.jpg);
     background-size: cover;
 }
-footer{
+/*footer{
     position: absolute;
     height: 443px;
     left: 0px;
@@ -256,4 +247,4 @@ footer{
     background: #111115;
     backdrop-filter: blur(2px);
     z-index: 100;
-}
+}*/

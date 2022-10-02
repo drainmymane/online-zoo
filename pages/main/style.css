@@ -1,6 +1,35 @@
-html {
+* {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+html,
+body{
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    line-height: 1;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+}
+
+.wrapper{
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction:column;
+    min-height: 100%;
+}
+.main{
+    flex: 1 1 auto;
+}
+.footer{
+    position: absolute;
+	width: 100%;
+    color:#FFFFFF;
+    background: #111115;
+    backdrop-filter: blur(2px);
+    z-index: 1000;
 }
 .container{
     display: flex;
@@ -48,27 +77,26 @@ html {
     line-height: 140%;
 }
 .section1-ft{
-    position: absolute;
     height: 780px;
     left: 0px;
     right: 0px;
-    top: 0px;
     background-image: url(https://cdn.discordapp.com/attachments/1000527793190359150/1023335234986590299/GiantPanda.png);
     background-size: cover;
+    margin-bottom: 140px;
 }
 /**/
 .section2-ft {
+    margin: auto;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 87px;
     justify-content: space-between;
     align-items: stretch;
-    position: absolute;
-    top: 920px;
     left: calc(50% - 1161px/2 - 1px);
     max-width: 1161px;
     color: #333B41;
+    margin-bottom: 100px;
 }
 .section2-ft div{
     word-wrap: break-word;
@@ -80,10 +108,7 @@ html {
     grid-column-gap: 30px;
     grid-row-gap: 20px;
 
-    position: absolute;
     left: calc(50% - 1170px/2 - 1px);
-    height: 872px;
-    top: 1503px;
     background: #FFFFFF;
 }
 .section3-ft div {
@@ -120,11 +145,10 @@ html {
     position: absolute;
     padding: 16px 20px;
     left: calc(50% - 298px/2);
-    top: 2455px;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-
+    margin-top: 80px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
 }
@@ -136,26 +160,21 @@ html {
 }
 
 .section4-ft{
-    position: absolute;
     height: 1004px;
     left: 0px;
     right: 0px;
-    top: 2609px;
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     opacity: 0.9;
+    margin-top: 200px;
+    padding: 69px 220px 100px;
 }
 .bg {
-    position: absolute;
-    height: 835px;
-    left: 220px;
-    right: 220px;
-    top: 69px;
-
     background: rgba(253, 253, 255, 0.52);
     backdrop-filter: blur(2px);
-
     border-radius: 20px;
     color: #333B41;
+
+    margin-top: 234px;
     z-index: 100;
 }
 .grid2{
@@ -205,7 +224,7 @@ html {
     font-size: 36px;
 }
 .section5-ft{
-
+    margin-bottom: 20px;
 }
 .flower-foto1{
     position: absolute;
@@ -226,6 +245,7 @@ html {
     left: 0px;
     top: 2149px;
     background:url(https://cdn.discordapp.com/attachments/957401806063947827/1023530181010407486/palm_foto.jpg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .strelitzia1{
     position: absolute;
@@ -235,16 +255,17 @@ html {
     top: 2334px;
     background: url(https://cdn.discordapp.com/attachments/957401806063947827/1023530180146384967/strelitzia_1.jpg);
     background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-/*footer{
+/*.leav-foto{
     position: absolute;
-    height: 443px;
-    left: 0px;
+    width: 300.92px;
+    height: 295.45px;
     right: 0px;
-    bottom: 0px;
-
-    color:#FFFFFF;
-    background: #111115;
-    backdrop-filter: blur(2px);
-    z-index: 100;
+    top: 4408px;
+    background: url(https://cdn.discordapp.com/attachments/822878507822219317/1026124530353193031/leav_foto.png);
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 1000;
 }*/
+

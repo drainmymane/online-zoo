@@ -1,6 +1,9 @@
 * {
+    margin-top: 0;
 	margin-left: 0;
 	padding-left: 0;
+    margin-right: 0;
+	padding-right: 0;
 }
 
 html,
@@ -35,12 +38,11 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 14px 220px;
-    gap: 122px;
+    justify-content: space-evenly;
 
+    height: 10%;
     position: absolute;
-    width: 1600px;
-    height: 80px;
+    width: 100%;
     left: 0px;
     top: 0px;
     color:#FFFFFF;
@@ -70,6 +72,9 @@ body{
     color: orange;
 
 }
+#logo:hover{
+    color: #FFFFFF;
+}
 
 .container-nav{
     font-weight: 500;
@@ -77,10 +82,7 @@ body{
     line-height: 140%;
 }
 .section1-ft{
-    height: 780px;
-    left: 0px;
-    right: 0px;
-    background-image: url(https://cdn.discordapp.com/attachments/1000527793190359150/1023335234986590299/GiantPanda.png);
+    margin:auto;
     background-size: cover;
     margin-bottom: 140px;
 }
@@ -102,25 +104,25 @@ body{
     word-wrap: break-word;
 }
 /**/
-.section3-ft {
+.section3-ft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grid3-ft {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
-    grid-row-gap: 20px;
-
-    left: calc(50% - 1170px/2 - 1px);
-    background: #FFFFFF;
+    grid-row-gap: 100px;
 }
-.section3-ft div {
+.grid3-ft div {
     border: 2px solid orange;
     border-radius: 3px;
 }
-.section3-ft span{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding-left: 10px;
+.grid3-ft img{
+    height:100%;
 }
+
 .pets_img{
     transition: 1s;
 }
@@ -134,7 +136,7 @@ body{
 .arrow_btn{
     position: absolute;
     padding: 32px 32px;
-    top: 1906px;
+    top: 1954px;
     border-radius: 50px;
     color: aliceblue;
     z-index: 50;
@@ -142,9 +144,7 @@ body{
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 }
 .btn1{
-    position: absolute;
     padding: 16px 20px;
-    left: calc(50% - 298px/2);
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -181,7 +181,7 @@ body{
     display: grid;
     margin: 40px 300px 40px 300px;
     grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
 }
 .box1 {
     grid-column-start: 1;
@@ -219,14 +219,52 @@ body{
 
     color: #FE9013;
 }
-.bg h3{
+h3 {
     font-weight: 400;
     font-size: 36px;
 }
 .section5-ft{
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 200px;
+    align-items: center;
 }
-.flower-foto1{
+.slidecontainer {
+    align-self: center;
+    width: 50%; 
+}
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 6px;
+    border-radius: 5px; 
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 100px; /* Set a specific slider handle width */
+    height: 6px;
+    border-radius: 5px;   /* Slider handle height */
+    background: #FE9013; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 6px;
+    border-radius: 5px; 
+    background: orangered; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+/*.flower-foto1{
     position: absolute;
     width: 293px;
     height: 1000px;
@@ -257,7 +295,8 @@ body{
     background-size: cover;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-/*.leav-foto{
+
+.leav-foto{
     position: absolute;
     width: 300.92px;
     height: 295.45px;

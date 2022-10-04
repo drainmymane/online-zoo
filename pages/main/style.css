@@ -152,7 +152,8 @@ body{
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-top: 140px;
+    margin-bottom: -24px;
+    margin-top: 50px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
 }
@@ -208,9 +209,65 @@ h3 {
     margin: 50px auto 200px;
     align-items: center;
 }
+.column5 {
+    padding: 0 15px;
+    flex-grow: 0 1 25%;
+}
+.row5 {
+    display: flex;
+    margin: 0 -15px;
+    margin-bottom: 30px;
+}
+.item5{
+    display: flex;
+    flex-direction: column;
+    background: #F1F3F2;
+    border-radius: 20px;
+    border: 5px solid #000000;
+    color:grey;
+    line-height: 120%;
+    overflow: hidden;
+    padding: 16px;
+    font-weight: 300;
+    max-height: 380px;
+    max-width: 268px;
+}
+
+.media-object5 {
+    display: flex;
+    flex-direction: row;
+}
+.media-image5 {
+    flex-grow: 0 20% auto;
+    margin-right: 7px;
+}
+.media-title {
+    flex-grow: 1 1 auto;
+    padding-left: 0;
+}
+.column5-text1 {
+    size: 16px;
+    line-height:19.2px;
+    font-weight: 400;
+    color: #000000;
+    word-break: normal;
+}
+.column5-text2 {
+    display: flex;
+    margin: 0 -3px;
+    size: 15px;
+    line-height:18px;
+}
+.column5-text2 div{
+    padding: 0 3px;
+}
+.column5-body {
+}
+
 .slidecontainer {
     align-self: center;
     width: 50%; 
+    margin: 20px auto 20px auto;
 }
 .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
@@ -286,4 +343,3 @@ h3 {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     z-index: 1000;
 }*/
-

@@ -229,7 +229,7 @@ h3 {
     overflow: hidden;
     padding: 16px;
     font-weight: 300;
-    max-height: 380px;
+    height: 380px;
     max-width: 268px;
 }
 

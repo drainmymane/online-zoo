@@ -164,7 +164,6 @@ body{
 }
 
 .section4-ft{
-    height: 1004px;
     left: 0px;
     right: 0px;
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -177,49 +176,21 @@ body{
     backdrop-filter: blur(2px);
     border-radius: 20px;
     color: #333B41;
-
-    margin-top: 234px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 69px 220px 100px;
     z-index: 100;
 }
 .flex4{
-    display: grid;
-    margin: 40px 300px 40px 300px;
-    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
-    grid-template-rows: 2fr 1fr;
+    display: flex;
+    flex-direction: row;
+    
 }
-.box1 {
-    grid-column-start: 1;
-    grid-column-end: 6;
-}
-.box2 {
-    background: url(https://media.discordapp.net/attachments/806205728347389985/1023546955596574740/Vector.png?width=64&height=33);
-    width: auto;
-    height: auto;
-}
-.box3{
-    flex-wrap: nowrap;
-    height: 168px;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    display:inline-block;
-    align-content: stretch;
-    vertical-align: middle;
-}
-.box3 img{
-    background-color: #FFFFFF;
-    height: 100%;
-    align-self: center;
-}
-.grid2 div{
-    margin: auto;
-    border: 2px solid orange;
-    border-radius: 3px;
-}
+
 .bg h1{
     font-weight: 400;
     font-size: 48px;
-
-    text-align: center;
 
     color: #FE9013;
 }

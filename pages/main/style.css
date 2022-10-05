@@ -53,6 +53,10 @@ body{
 .container div{
     margin: auto;
 }
+.container a{
+    text-decoration-line: none;
+    color: #FFFFFF;
+}
 .petstory-logo {
     box-sizing: border-box;
 
@@ -69,6 +73,10 @@ body{
     padding: 5px;
 }
 .container div:hover{
+    color: orange;
+
+}
+.container a:hover{
     color: orange;
 
 }
@@ -152,8 +160,6 @@ body{
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: -24px;
-    margin-top: 50px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
 }
@@ -206,32 +212,48 @@ h3 {
 .section5-ft{
     display: flex;
     flex-direction: column;
-    margin: 50px auto 200px;
+    margin: 50px auto 0px;
     align-items: center;
 }
-.column5 {
-    padding: 0 15px;
-    flex-grow: 0 1 25%;
+.wrapper5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
 .row5 {
     display: flex;
     margin: 0 -15px;
-    margin-bottom: 30px;
 }
+.column5 {
+    background-image: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    margin: 0 15px;
+    flex-grow: 0 1 25%;
+    border-radius: 20px;
+    padding: 2px;
+    
+}
+
 .item5{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     background: #F1F3F2;
+    border: 2px solid transparent;
     border-radius: 20px;
-    border: 5px solid #000000;
+
     color:grey;
     line-height: 120%;
     overflow: hidden;
     padding: 16px;
     font-weight: 300;
-    height: 380px;
+    height: 395px;
     max-width: 268px;
 }
+.column5:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 
 .media-object5 {
     display: flex;
@@ -257,17 +279,19 @@ h3 {
     margin: 0 -3px;
     size: 15px;
     line-height:18px;
+    color: #BDBDBD;
 }
 .column5-text2 div{
     padding: 0 3px;
 }
 .column5-body {
+    color:#767474;
 }
 
 .slidecontainer {
     align-self: center;
-    width: 50%; 
-    margin: 20px auto 20px auto;
+    width: 53%; 
+    margin: 21px auto 31px auto;
 }
 .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
@@ -317,7 +341,7 @@ h3 {
     width: 292px;
     height: 460px;
     left: 0px;
-    top: 2351px;
+    align-self:flex-end;
     background:url(https://cdn.discordapp.com/attachments/957401806063947827/1023530181010407486/palm_foto.jpg);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -326,20 +350,28 @@ h3 {
     width: 368px;
     height: 275px;
     right: 0px;
-    top: 2536px;
+    bottom: 0;
     background: url(https://cdn.discordapp.com/attachments/957401806063947827/1023530180146384967/strelitzia_1.jpg);
     background-size: cover;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/*.leav-foto{
-    position: absolute;
+.leav-foto{
+    position: relative;
     width: 300.92px;
     height: 295.45px;
+    align-self: flex-end;
     right: 0px;
-    top: 4408px;
     background: url(https://cdn.discordapp.com/attachments/822878507822219317/1026124530353193031/leav_foto.png);
     background-size: cover;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     z-index: 1000;
-}*/
+}
+.icon_social {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}

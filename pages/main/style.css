@@ -93,6 +93,7 @@ body{
 .section1-ft{
     margin:auto;
     background-size: cover;
+    margin-bottom: 140px;
 }
 /**/
 .section32-ft{
@@ -100,23 +101,26 @@ body{
     flex-direction: column;
 }
 .section2-ft {
-    margin: 140px auto 180px;
+    margin: auto;
     box-sizing: border-box;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 87px;
+    justify-content: space-between;
+    align-items: stretch;
+    left: calc(50% - 1161px/2 - 1px);
     max-width: 1161px;
     color: #333B41;
+    margin-bottom: 100px;
 }
 .section2-ft div{
     word-wrap: break-word;
 }
-.section2-ft h1{
+.section2-ft h2{
     font-size: 48px;
     line-height: 57.6px;
 }
-.section2-ft h4{
-    font-size: 24px;
-    line-height: 28.8px;
-}
+
 .section2-ft p{
     font-size: 16px;
     line-height: 20.8px;
@@ -173,6 +177,7 @@ body{
     color: #FFFFFF;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
+    z-index: 10000;
 }
 .btn1:hover{
     background: linear-gradient(113.96deg, #f76f35 1.49%, #fc8600 101.44%);
@@ -196,28 +201,42 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 69px 220px 100px;
+    word-wrap: nowrap;
+
+    
     z-index: 100;
+    padding: 40px 0px 75px 100px;
 }
 .flex4{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+.flex4_column{
+
+}
 .flex4 img{
     background-color: #ffffff;
-    border: 3px solid #000000;
+    border: 2px solid #FE9013;
 }
 
 .bg h1{
     font-weight: 400;
     font-size: 48px;
-
     color: #FE9013;
 }
-h3 {
+.bg h3 {
     font-weight: 400;
     font-size: 36px;
+}
+.bg h4{
+    font-size:24px;
+    line-height: 28.8px;
+    font-weight: 500;
+    align-self: flex-start;
+}
+.bg p{
+    align-self: flex-start;
 }
 .section5-ft{
     display: flex;

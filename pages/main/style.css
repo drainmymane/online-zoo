@@ -101,30 +101,44 @@ body{
 .section1-logo{
     box-sizing: border-box;
     position: absolute;
+    z-index: 10000;
+    top:17%;
+    left: 50%;
+    width: 655px;
+    margin-bottom: 700px;
+    text-align: center; 
+}
+.logo1-circle{
+    box-sizing: border-box;
+    position: absolute;
+    width: 465px;
+    height: 465px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
+    top:17%;
+    left: 50%;
+}
+.logo-1-text{
+    width: 465px;
+    height: 465px;
+    position: absolute;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 106.496px;
     line-height: 75%;
-    width: 465px;
-    height: 465px;
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);;
     text-align: center;
     text-transform: uppercase;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: 10000;
-    top:17%;
-    left: 50%;
-    margin-bottom: 700px;
+    z-index: 100000px;
+    top:26%;
+    left: 55%;
 }
-.section1-logo span{
-    padding-right: 0;
-    padding-bottom: 0;
-    margin-right: 0;
-    margin-bottom: 0;
+
+.logo-1-text span{
+    color:yellow;
 }
 /**/
 .section32-ft{

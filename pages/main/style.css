@@ -43,11 +43,15 @@ body{
     justify-items: start;
     margin: auto;
 }
+.grid-footer-container div{
+    border: 2px solid #EAF7FE;
+}
 .subscribe {
     grid-column:3/4;
     grid-row:1/2;
 }
 #footer_btn {
+    width: 40%;
     border-radius: 5px;
 }
 .socials {
@@ -62,10 +66,14 @@ body{
 }
 .footer-links div{
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .watermark {
     grid-column:3/4;
-    grid-row:2/4;
+    grid-row:1/4;
     font-weight: 100;
     font-size: 16px;
     line-height: 130%;
@@ -170,7 +178,7 @@ a{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 100000px;
     top:26%;
-    left: 55%;
+    left: 54%;
 }
 
 .logo-1-text span{

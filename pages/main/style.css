@@ -95,6 +95,37 @@ body{
     background-size: cover;
     margin-bottom: 140px;
 }
+.section1-ft img{
+    position: relative;
+}
+.section1-logo{
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 50%;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    width: 465px;
+    height: 465px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 10000;
+    top:17%;
+    left: 50%;
+    margin-bottom: 700px;
+}
+.section1-logo span{
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
 /**/
 .section32-ft{
     display: flex;
@@ -133,7 +164,8 @@ body{
 }
 .grid3-ft {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
     grid-column-gap: 30px;
     grid-row-gap: 100px;
     margin-left: 50px;
@@ -167,8 +199,8 @@ body{
     border-radius: 50px;
     color: aliceblue;
     z-index: 50;
-    transition: 2s;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    cursor: pointer;
 }
 .btn1{
     padding: 16px 20px;
@@ -178,12 +210,19 @@ body{
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
     z-index: 10000;
+    cursor: pointer;
 }
 .btn1:hover{
     background: linear-gradient(113.96deg, #f76f35 1.49%, #fc8600 101.44%);
 }
 .arrow_btn:hover{
     background: linear-gradient(113.96deg, #f76f35 1.49%, #fc8600 101.44%);
+}
+.btn1:active{
+    background: #4B9200;
+}
+.arrow_btn:active{
+    background: #4B9200;
 }
 
 .section4-ft{
@@ -201,24 +240,56 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    word-wrap: nowrap;
 
     
     z-index: 100;
     padding: 40px 0px 75px 100px;
 }
-.flex4{
+.grid4{
+    display: grid;
+    grid-template-columns: 168px 69px 168px 69px 168px;
+    grid-template-rows: 168px auto;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin:0px;
+    margin-top: 40px;
+}
+
+.widjets{
+    background: #FFFFFF;
+    border: 2px solid #F9804B;
+    border-radius: 5px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.vector{
+    align-self:center;
+}
+/*
+.flex4_row{
+    display: flex;
+    margin: 2% -15px 0;
     align-items: center;
 }
 .flex4_column{
-
+    margin: 0 15px;
+    flex-grow: 0 1 25%;
+    border-radius: 20px;
+    padding: 2px;
+    height: 244px;
+    width: 168px;
 }
-.flex4 img{
-    background-color: #ffffff;
-    border: 2px solid #FE9013;
+.item4 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: #F1F3F2;
+    border: 2px solid orange;
+    padding: 10px;
 }
+*/
 
 .bg h1{
     font-weight: 400;
@@ -228,6 +299,8 @@ body{
 .bg h3 {
     font-weight: 400;
     font-size: 36px;
+    margin-top: 60px;
+    justify-self: center;
 }
 .bg h4{
     font-size:24px;
@@ -350,13 +423,13 @@ body{
     width: 25px; /* Set a specific slider handle width */
     height: 6px;
     border-radius: 5px; 
-    background: orangered; /* Green background */
+    background: #FE9013; /* Green background */
     cursor: pointer; /* Cursor on hover */
 }
 .flower-foto1{
     position: absolute;
     right: 0px;
-    top: 992px;
+    top: 892px;
     align-self: flex-end;
     background-size: cover;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));

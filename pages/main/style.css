@@ -314,14 +314,24 @@ body{
 .section5-ft{
     display: flex;
     flex-direction: column;
-    margin: 50px auto 0px;
     align-items: center;
 }
 .wrapper5{
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+}
+.wrapper5 h3{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 47px;
+
 }
 .row5 {
     display: flex;

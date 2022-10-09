@@ -35,12 +35,12 @@ body{
     backdrop-filter: blur(2px);
     z-index: 1000;
     padding: 30px;
+    justify-items: center;
 }
 .grid-footer-container{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 2fr 1fr 1fr;
-    justify-content: center;
     margin: auto;
 }
 

@@ -60,24 +60,39 @@ body{
     letter-spacing: 0em;
     text-align: left;
 }
-.subscribe input{
+.footer_email{
     padding: 10px;
     border-radius: 2px;
     border:1px solid rgba(249, 128, 75,0.7);
     background-color: #000000;
-}
-.subscribe input:invalid + .subscribe button{
-    border-color: rgba(255, 0, 0,0.7);
+    color: #F1F3F2;
 }
 
-.subscribe input:valid + .subscribe button{
-    border-color: rgba(0, 255, 0,0.7);
+.footer_email:invalid + .submit_btn{
+    border-color: #D31414;
+    color: #D31414;
 }
-.subscribe button{
+.footer_email:valid{
+    border-color: #4B9200;
+}
+.footer_email:valid + .submit_btn{
+    border-color: #333B41;
+    color: #333B41;
+}
+.submit_btn{
+    background: #F1F3F2;
     height: 100%;
     margin: auto 10px;
     width: 20%;
+    border-width: 1px;
     border-radius: 5px;
+    border-color: #333B41;
+    color: #333B41;
+    cursor: pointer;
+}
+.submit_btn:active{
+    border-color: #4B9200;
+    color: #4B9200;
 }
 .footer_btn {
     width: 40%;

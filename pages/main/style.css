@@ -48,13 +48,17 @@ body{
     grid-column:3/4;
     grid-row:1/2;
 }
+.subscribe form{
+    display: flex;
+    align-items: stretch;
+    height: 42px;
+}
 .subscribe label{
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top: 14px;
 }
 .subscribe input{
     padding: 10px;
@@ -62,15 +66,18 @@ body{
     border:1px solid rgba(249, 128, 75,0.7);
     background-color: #000000;
 }
+.subscribe input:invalid + .subscribe button{
+    border-color: rgba(255, 0, 0,0.7);
+}
+
+.subscribe input:valid + .subscribe button{
+    border-color: rgba(0, 255, 0,0.7);
+}
 .subscribe button{
-    padding: 10px;
-    background: #F1F3F2;
-    border: 1px solid #4B9200;
-    border-radius: 5px;
-    color: #4B9200;
+    height: 100%;
+    margin: auto 10px;
     width: 20%;
-    margin:auto;
-    margin-left: 10px;
+    border-radius: 5px;
 }
 .footer_btn {
     width: 40%;
@@ -274,6 +281,7 @@ a:hover{
 }
 .grid3-ft img{
     height: 100%;
+    margin-top: -0.5px;
 }
 .pets{
     display: flex;

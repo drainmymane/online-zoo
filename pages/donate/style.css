@@ -25,12 +25,213 @@ body{
 }
 .main{
     flex: 1 1 auto;
+    flex-direction:column;
 }
 .footer{
-    position: absolute;
-	width: 100%;
+    display:flex;
+    position: relative;
+	margin: auto 0 0 0;
     color:#FFFFFF;
     background: #111115;
     backdrop-filter: blur(2px);
     z-index: 1000;
+    padding: 30px;
+    justify-items: center;
+}
+.grid-footer-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+    margin: auto;
+}
+/*.grid-footer-container div{
+    border: 1px solid #fff;
+}*/
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    grid-column:3/4;
+    grid-row:1/2;
+    height: 80px;
+}
+.subscribe form{
+    display: flex;
+    align-items: stretch;
+    height: 42px;
+}
+.subscribe label{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.footer_email{
+    padding: 10px;
+    border-radius: 2px;
+    border:1px solid rgba(249, 128, 75,0.7);
+    background-color: #000000;
+    color: #F1F3F2;
+}
+
+.footer_email:invalid + .submit_btn{
+    border-color: #D31414;
+    color: #D31414;
+}
+.footer_email:valid{
+    border-color: #4B9200;
+}
+.footer_email:valid + .submit_btn{
+    border-color: #333B41;
+    color: #333B41;
+}
+.submit_btn{
+    background: #F1F3F2;
+    height: 100%;
+    margin: auto 20px;
+    width: 20%;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #333B41;
+    color: #333B41;
+    cursor: pointer;
+}
+.submit_btn:active{
+    border-color: #4B9200;
+    color: #4B9200;
+}
+#footer_btn {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: flex-start;
+    justify-items: start;
+    grid-column:1/2;
+    grid-row:2/3;
+    align-self: center;
+    justify-self: start;
+}
+.socials {
+    grid-column:1/2;
+    grid-row:3/4;
+    align-self: flex-end;
+}
+.socials li{
+    line-height: 22.4px;
+}
+.socials li::before{
+    background: rgba(196, 196, 196, 0.5);
+    padding: 5px;
+}
+.footer-links {
+    display: flex;
+    grid-column:2/3;
+    grid-row:1/4;
+    align-self: flex-end;
+}
+.footer-links div{
+    margin: auto 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.watermark {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    grid-column:3/4;
+    grid-row:3/4;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 0.4);
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    color:#FFFFFF;
+    background: #000000;
+    backdrop-filter: blur(2px);
+    z-index: 10;
+}
+.container div{
+    margin: auto;
+}
+a{
+    text-decoration-line: none;
+    color: #FFFFFF;
+}
+.petstory-logo {
+    box-sizing: border-box;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+    text-align: center;
+    justify-self: start;
+    align-self: start;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    border: 1.18841px solid #FFFFFF;
+    padding: 5px;
+}
+.container div:hover{
+    color: orange;
+
+}
+a:hover{
+    color: orange;
+
+}
+
+#footer-logo:hover{
+    color: #FFFFFF;
+}
+#logo:hover{
+    color: #FFFFFF;
+}
+
+.container-nav{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+.btn1{
+    padding: 16px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    z-index: 10000;
+    cursor: pointer;
+}
+.btn1:hover{
+    background: linear-gradient(113.96deg, #f76f35 1.49%, #fc8600 101.44%);
+}
+.btn1:active{
+    background: #4B9200;
+}
+.section1-ft{
+    margin:auto;
+    background-size: cover;
+    margin-bottom: 140px;
+}
+.section1-ft img{
+    position: relative;
 }

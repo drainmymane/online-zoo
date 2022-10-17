@@ -109,9 +109,21 @@
                         </div>
                         <div class="another_amount">
                             <form>
-                                <input type="number" class="input_num" min="1" max="4" placeholder="Another amount" id="amount" value="1">
+                                <input type="number" id="inp" max="4" name="name" placeholder="Another amount" id="amount" value="1">
                                 <script>
-                                    
+                                    function numberLimitation (inp, limit) {
+                                        var t = typeof inp === "string" ? document.querySelector (inp) : inp,
+                                            f = function (e) {
+                                            var v = t.value.split ("");
+                                                if (v.length > limit) {
+                                                    t.value = v.slice(0, limit).join("");
+                                                }
+                                            };
+                                        t.addEventListener ("input", f);
+                                    }
+                                    window.addEventListener ("load", function () {
+                                        numberLimitation ("#inp", 4);
+                                    })
                                 </script>
                             </form>
                         </div>
@@ -119,7 +131,7 @@
                             <form>
                                 <input type="radio" class="note_input" name="period" value="month">
                                 <label>Month</label>
-                                <input type="radio" style="margin-left: 50px;"class="note_input" name="period" value="once">
+                                <input type="radio" style="margin-left: 50px;" class="note_input" name="period" value="once">
                                 <label>Once</label>
                             </form>
                         </div>

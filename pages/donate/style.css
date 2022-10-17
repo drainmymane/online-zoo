@@ -368,6 +368,18 @@ a:hover{
     height: 10px;
     position: relative;
 }
+.progress_bar label {
+    position: absolute;
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: -40px;
+    color: #333B41;
+}
 
 .another_amount {
 }

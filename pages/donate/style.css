@@ -312,8 +312,7 @@ a:hover{
     align-self:center;
     font-size:16px;
     line-height: 140%;
-    margin: 30px;
-    margin-top: 0px;
+    margin: 0px 30px;
 }
 .animals_widget{
     display: flex;

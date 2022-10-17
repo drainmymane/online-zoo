@@ -330,18 +330,45 @@ a:hover{
 }
 .progress_bar{
     display: flex;
-    padding: 8px 9px;
-    justify-items: space-between;
-    justify-items: space-between;
-    width: 100%;
+    justify-items: space-evenly;
+    width: 91%;
     border: 1px solid #000000;
+    background-color: #72828E;
+    border: 13px solid #404950;
+    border-radius: 2px;
+    border-right: 50px solid #404950;
+    border-left: 50px solid #404950;
 }
 .progress_bar div{
-    
+    margin: -7px auto;
 }
-#zoo_cost{
+#first_bar{
+    margin-left: -10px;
+}
+#last_bar{
+    margin-right: -15px;
+}
 
+
+#zoo_cost{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+
+    background-color: #FFEE2E;
+    border: 0px solid transparent;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+
+    width: 10px;
+    height: 10px;
+    position: relative;
 }
+
 .another_amount {
 }
 .note{

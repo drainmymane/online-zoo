@@ -328,9 +328,21 @@ a:hover{
     flex-direction: column;
     align-items: center;
 }
-.progress_bar {
+.progress_bar{
+    display: flex;
+    padding: 8px 9px;
+    justify-items: space-between;
+    justify-items: space-between;
+    width: 100%;
+    border: 1px solid #000000;
+}
+.progress_bar div{
+    
+}
+#zoo_cost{
+
 }
 .another_amount {
 }
-.note {
+.note{
 }

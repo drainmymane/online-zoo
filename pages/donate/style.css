@@ -351,7 +351,7 @@ a:hover{
 }
 
 
-#zoo_cost{
+.zoo_cost{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -415,6 +415,25 @@ a:hover{
     background-image: url(https://cdn.discordapp.com/attachments/822878507822219317/1031672472724045947/dollar_active.png);
 }
 
-
 .note{
+    margin: 30px;
+    margin-bottom: -10px;
+    color:#333B41;
+}
+.note_input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+
+    background-color: transparent;
+    border: 1px solid #FE9013;
+    transition: 0.2s all linear;
+    outline: none;
+
+    position: relative;
+    background: transparent;
+    border-color: #333B41;
 }

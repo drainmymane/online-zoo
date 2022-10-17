@@ -50,56 +50,56 @@
                         </div>
                         <p id="amount">Amount</p>
                         <div class="progress_bar">
-                            <div id="first_bar"><input type="radio" id="zoo_cost" name="zoo" value="5000">
+                            <div id="first_bar"><input type="radio" class="zoo_cost" name="zoo" value="5000">
                             <label>
                                 <br>
                                 $5000
                                 </br>
                             </label>
                             </div>
-                            <div><input type="radio" id="zoo_cost" name="zoo" value="2000">
+                            <div><input type="radio" class="zoo_cost" name="zoo" value="2000">
                                 <label>
                                 <br>
                                 $2000
                                 </br>
                             </label>
                             </div>
-                            <div><input type="radio" id="zoo_cost" name="zoo" value="1000">
+                            <div><input type="radio" class="zoo_cost" name="zoo" value="1000">
                                 <label>
                                     <br>
                                     $1000
                                     </br>
                                 </label>
                             </div>
-                            <div><input type="radio" id="zoo_cost" name="zoo" value="500">
+                            <div><input type="radio" class="zoo_cost" name="zoo" value="500">
                                 <label>
                                     <br>
                                     $500
                                     </br>
                                 </label>
                             </div>
-                            <div><input type="radio" id="zoo_cost" name="zoo" value="250">
+                            <div><input type="radio" class="zoo_cost" name="zoo" value="250">
                                 <label>
                                     <br>
                                     $250
                                     </br>
                                 </label>
                             </div>
-                            <div><input type="radio" id="zoo_cost" name="zoo" value="100">
+                            <div><input type="radio" class="zoo_cost" name="zoo" value="100">
                                 <label>
                                     <br>
                                     $100
                                     </br>
                                 </label>
                             </div>
-                            <div><input type="radio" id="zoo_cost" name="zoo" value="50">
+                            <div><input type="radio" class="zoo_cost" name="zoo" value="50">
                                 <label>
                                     <br>
                                     $50
                                     </br>
                                 </label>
                             </div>
-                            <div id="last_bar"><input type="radio" id="zoo_cost" name="zoo" value="25">
+                            <div id="last_bar"><input type="radio" class="zoo_cost" name="zoo" value="25">
                                 <label>
                                     <br>
                                     $25
@@ -109,11 +109,18 @@
                         </div>
                         <div class="another_amount">
                             <form>
-                                <input type="number" min="1" max="9999" placeholder="Another amount" id="amount" value="1">
+                                <input type="number" class="input_num" min="1" max="4" placeholder="Another amount" id="amount" value="1">
+                                <script>
+                                    
+                                </script>
                             </form>
                         </div>
                         <div class="note">
                             <form>
+                                <input type="radio" class="note_input" name="period" value="month">
+                                <label>Month</label>
+                                <input type="radio" style="margin-left: 50px;"class="note_input" name="period" value="once">
+                                <label>Once</label>
                             </form>
                         </div>
                         <div class="btn1" style="width: 23%;align-self: center;margin: 30px;">feed a friend now</div>

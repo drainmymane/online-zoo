@@ -400,8 +400,11 @@ a:hover{
     line-height: 140%;
     outline: none;
     color: #929699;
+}
+.another_amount input::-webkit-outer-spin-button,
+.another_amount input::-webkit-inner-spin-button{
     -webkit-appearance: none;
-  margin: 0;
+    margin: 0;
 }
 #amount{
     

@@ -332,7 +332,6 @@ a:hover{
     display: flex;
     justify-items: space-evenly;
     width: 91%;
-    border: 1px solid #000000;
     background-color: #72828E;
     border: 13px solid #404950;
     border-radius: 2px;
@@ -434,4 +433,8 @@ a:hover{
 
     position: relative;
     background: transparent;
+    margin: auto 10px;
+}
+.note_input:checked{
+    background-color: #4B9200;
 }

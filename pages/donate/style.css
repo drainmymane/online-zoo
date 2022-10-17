@@ -313,6 +313,7 @@ a:hover{
     font-size:16px;
     line-height: 140%;
     margin: 30px;
+    margin-top: 0px;
 }
 .animals_widget{
     display: flex;
@@ -383,6 +384,7 @@ a:hover{
 
 .another_amount {
     margin: 80px;
+    margin-bottom: -10px;
 }
 .another_amount input {
     box-sizing: border-box;
@@ -406,8 +408,13 @@ a:hover{
     -webkit-appearance: none;
     margin: 0;
 }
-#amount{
-    
+
+.another_amount input:focus{
+    border: 1px solid #4B9200;
+    color: #4B9200;
+    background-image: url(https://cdn.discordapp.com/attachments/822878507822219317/1031672472724045947/dollar_active.png);
 }
+
+
 .note{
 }

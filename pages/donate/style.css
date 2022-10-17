@@ -400,6 +400,8 @@ a:hover{
     line-height: 140%;
     outline: none;
     color: #929699;
+    -webkit-appearance: none;
+  margin: 0;
 }
 #amount{
     

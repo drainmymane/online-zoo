@@ -90,6 +90,10 @@ body{
     border-color: #333B41;
     color: #333B41;
 }
+.footer_email:valid + .submit_btn:active{
+    border-color: #4B9200;
+    color: #4B9200;
+}
 .submit_btn{
     background: #F1F3F2;
     height: 100%;

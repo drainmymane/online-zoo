@@ -320,13 +320,14 @@ a:hover{
 .grid3-ft img{
     height: 100%;
     margin-top: -0.5px;
+    cursor: pointer;
 }
 .pets{
     display: flex;
     flex-direction: row;
 }
 .pets_img{
-    transition: 1s;
+    transition: 0.5s;
 }
 .pets_img:hover{
     transform: scale(1.05);

@@ -359,14 +359,28 @@ a:hover{
 
     background-color: #FFEE2E;
     border: 0px solid transparent;
-    transition: 0.2s all linear;
     outline: none;
     margin-right: 5px;
 
     width: 10px;
     height: 10px;
     position: relative;
+    outline-color: #FE9013;
+    outline-style: double;
+    outline-width: 0px;
+    outline-offset: 2px;
+    z-index: 10;
+    cursor: pointer;
+
 }
+
+.zoo_cost:checked{
+    outline-width: 10px;
+}
+.zoo_cost:checked + #cost{
+    color: #FE9013;
+}
+
 .progress_bar label {
     position: absolute;
     font-family: Roboto;

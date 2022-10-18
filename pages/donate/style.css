@@ -88,8 +88,11 @@ h3{
     border:1px solid rgba(249, 128, 75,0.7);
     background-color: #000000;
     color: #F1F3F2;
+    outline: none;
 }
-
+.footer_email:invalid{
+    border-color: #D31414;
+}
 .footer_email:invalid + .submit_btn{
     border-color: #D31414;
     color: #D31414;

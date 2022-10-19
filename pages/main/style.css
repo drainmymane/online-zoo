@@ -180,6 +180,15 @@ a{
     text-decoration-line: none;
     color: #FFFFFF;
 }
+.container_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+}
+#designed-by{
+    width: 15%;
+}
 .petstory-logo {
     box-sizing: border-box;
 
@@ -197,7 +206,7 @@ a{
     border: 1.18841px solid #FFFFFF;
     padding: 5px;
 }
-.container div:hover{
+.container_nav div:hover{
     color: orange;
 
 }

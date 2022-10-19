@@ -313,14 +313,14 @@ a:hover{
     grid-row-gap: 100px;
     margin-left: 50px;
     margin-right: 50px;
+    padding: 0;
 }
 .grid3-ft div {
-    border: 2px solid orange;
+    outline: 2px solid orange;
     border-radius: 3px;
 }
 .grid3-ft img{
     height: 100%;
-    margin-top: -0.5px;
     cursor: pointer;
 }
 .pets{

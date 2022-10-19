@@ -331,7 +331,7 @@ a:hover{
 
 .grid3-ft img:hover{
     transform: scale(1.05);
-    background-color:rgba(0,0,0,.3);
+    filter: brightness(60%);
 }
 
 

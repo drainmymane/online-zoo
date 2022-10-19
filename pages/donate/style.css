@@ -459,3 +459,12 @@ a:hover{
 .note_input:checked{
     background-color: #4B9200;
 }
+@media screen and (max-width: 1000px){
+    
+}
+@media screen and (max-width: 640px){
+    
+}
+@media screen and (max-width: 320px){
+    
+}

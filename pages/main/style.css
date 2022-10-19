@@ -643,3 +643,13 @@ a:hover{
     font-size: 16px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1000px){
+    
+}
+@media screen and (max-width: 640px){
+    
+}
+@media screen and (max-width: 320px){
+    
+}

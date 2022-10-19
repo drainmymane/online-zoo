@@ -311,7 +311,7 @@ a:hover{
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 30px;
     grid-row-gap: 40px;
-    margin-left: 120px;
+    margin-left: 50px;
     margin-right: 50px;
     padding: 0;
 }
@@ -322,16 +322,16 @@ a:hover{
 .grid3-ft img{
     height: 100%;
     cursor: pointer;
+    transition: 0.5s;
 }
 .pets{
     display: flex;
     flex-direction: row;
 }
-.pets_img{
-    transition: 0.5s;
-}
-.pets_img:hover{
+
+.grid3-ft img:hover{
     transform: scale(1.05);
+    background-color:rgba(0,0,0,.3);
 }
 
 

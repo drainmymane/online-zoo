@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset=utf-8">
+<meta name="viewport" content="width=1600, user-scalable=no">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<title>desktop_petstory</title>
+</head> 
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="petstory-logo" id="logo">PetStory<br>online<br></div>
+                <div><a href="/online-zoo/pages/main/desktop_petstory.html">About</a></div>
+                <div>Map</div>
+                <div>Zoos</div>
+                <div><a style="color: #FE9013"  href="/online-zoo/pages/donate/desktop_donate.html">Donate</a></div>
+                <div>Contact us</div>
+                <div><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks">Designed by &#169</a></div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="section1-ft">
+                <img src="https://cdn.discordapp.com/attachments/1000527793190359150/1023335234986590299/GiantPanda.png" width=100%>
+            </section>
+            <section class="section2-ft">
+                <div class="help_message">
+                    <h3>THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h3>
+                    <p>Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or<br>postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the<br>community, and we are grateful for the generosity. But much more support is still needed, and we need your help! Please consider a gift today – no matter what<br>size – to help us sustain our mission.</p>
+                </div>
+                <div class="donation_information">
+                    <h3>Donation Information</h3>
+                </div>
+                <div class="pick_and_feed">
+                    <div class="bg_container">
+                        <h2 style="color: #FE9013">Pick and feed a friend</h2>
+                        <p style="align-self: start">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+                        <div class="animals_widget">
+                            <div class="panda_diet">
+                                <span style="font-size: 72px;line-height: 80%;font-weight: 500;">4</span>
+                                <p style="font-size:16px;line-height: 140%;">Panda diet for the day.</p>
+                            </div>
+                            <div style="font-size: 24px;font-weight: 100;">&times</div>
+                            <div>
+                                <img src="https://cdn.discordapp.com/attachments/822878507822219317/1031600863149576203/panda_widget1.png" style="width:80%">
+                            </div>
+                        </div>
+                        <p id="amount">Amount</p>
+                        <div class="progress_bar">
+                            <div id="first_bar"><input type="radio" class="zoo_cost" name="zoo" value="5000">
+                            <label id="cost">
+                                <br>
+                                $5000
+                                </br>
+                            </label>
+                            </div>
+                            <div><input type="radio" class="zoo_cost" name="zoo" value="2000">
+                                <label id="cost">
+                                <br>
+                                $2000
+                                </br>
+                            </label>
+                            </div>
+                            <div><input type="radio" class="zoo_cost" name="zoo" value="1000">
+                                <label id="cost">
+                                    <br>
+                                    $1000
+                                    </br>
+                                </label>
+                            </div>
+                            <div><input type="radio" class="zoo_cost" name="zoo" value="500">
+                                <label id="cost">
+                                    <br>
+                                    $500
+                                    </br>
+                                </label>
+                            </div>
+                            <div><input type="radio" class="zoo_cost" name="zoo" value="250">
+                                <label id="cost">
+                                    <br>
+                                    $250
+                                    </br>
+                                </label>
+                            </div>
+                            <div><input type="radio" class="zoo_cost" name="zoo" value="100">
+                                <label id="cost">
+                                    <br>
+                                    $100
+                                    </br>
+                                </label>
+                            </div>
+                            <div><input type="radio" class="zoo_cost" name="zoo" value="50">
+                                <label id="cost">
+                                    <br>
+                                    $50
+                                    </br>
+                                </label>
+                            </div>
+                            <div id="last_bar"><input type="radio" class="zoo_cost" name="zoo" value="25">
+                                <label id="cost">
+                                    <br>
+                                    $25
+                                    </br>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="another_amount">
+                            <form>
+                                <input type="number" id="inp" max="4" name="name" placeholder="Another amount" id="amount" value="1">
+                                <script>
+                                    function numberLimitation (inp, limit) {
+                                        var t = typeof inp === "string" ? document.querySelector (inp) : inp,
+                                            f = function (e) {
+                                            var v = t.value.split ("");
+                                                if (v.length > limit) {
+                                                    t.value = v.slice(0, limit).join("");
+                                                }
+                                            };
+                                        t.addEventListener ("input", f);
+                                    }
+                                    window.addEventListener ("load", function () {
+                                        numberLimitation ("#inp", 4);
+                                    })
+                                </script>
+                            </form>
+                        </div>
+                        <div class="note">
+                            <form>
+                                <input type="radio" class="note_input" name="period" value="month">
+                                <label>Month</label>
+                                <input type="radio" style="margin-left: 50px;" class="note_input" name="period" value="once" checked>
+                                <label>Once</label>
+                            </form>
+                        </div>
+                        <div class="btn1" style="width: 23%;align-self: center;margin: 30px;">feed a friend now</div>
+                        <p id="share">Share with your friends on social networks </p>
+                    </div>
+                </div>
+                <div></div>
+            </section>
+            <footer class="footer">
+                <div class="grid-footer-container">
+                    <div class="petstory-logo" id="footer-logo">PetStory<br>online<br></div>
+                    <div class="subscribe">
+                        <label>
+                            Subscribe to our news
+                        </label>
+                        <form>
+                            <input class="footer_email" type="email" required placeholder="Enter your email">
+                            <button class="submit_btn" disabled>Submit</button>
+                        </form>
+                    </div>
+                    <div class="btn1" id="footer_btn">donate for volunteers</div>
+                    <div class="socials">
+                        <ul>
+                            <li><img src="https://cdn.discordapp.com/attachments/822878507822219317/1028093864348749855/Fill_211.png">Facebook</li>
+                            <li><img src="https://cdn.discordapp.com/attachments/822878507822219317/1028094267194875924/Fill_172.png">Twitter</li>
+                            <li><img src="https://cdn.discordapp.com/attachments/822878507822219317/1028094223066615888/Fill_166.png">Instagram</li>
+                            <li><img src="https://cdn.discordapp.com/attachments/822878507822219317/1028094250312802375/Fill_213.png">YouTube</li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <div><a href="/online-zoo/pages/main/desktop_petstory.html">About</a></div>
+                        <div>Map</div>
+                        <div>Zoos</div>
+                        <div>Contact us</div>
+                    </div>
+                    <div class="watermark">
+                        <p>Designed by Alisa Samborskaya</p>
+                        <p>©RSSchool & ©Yem Digital 2021</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="jscripts.js"></script>
+</body>
+</html>

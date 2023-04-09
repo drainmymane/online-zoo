@@ -310,6 +310,8 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-shrink: 0;
+    flex-grow: 1;
 }
 .grid3-ft {
     display: grid;
@@ -380,6 +382,7 @@ a:hover{
 }
 
 .section4-ft{
+    margin-top: -3px;
     left: 0px;
     right: 0px;
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -600,18 +603,17 @@ a:hover{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     z-index: 101;
 }
-.plant{
+.plants{
     display: flex;
-    margin-bottom: 0;
-    margin-top: -220px;
-    min-width:100vh;
+    flex-direction: row;
+    box-sizing: content-box;
+    width: 100%;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
+
 .palm-foto{
     position: relative;
-    width: 292px;
-    height: 460px;
+    margin-top: -200px;
     left: 0px;
     align-self: flex-start;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -619,8 +621,7 @@ a:hover{
 }
 .strelitzia1{
     position: relative;
-    width: 368px;
-    height: 275px;
+    margin-top: -280px;
     right: 0px;
     align-self: flex-end;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
